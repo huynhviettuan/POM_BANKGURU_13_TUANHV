@@ -1,9 +1,9 @@
-package pageObjects;
+package bankguru.pageObjects;
 
 import org.openqa.selenium.WebDriver;
 
+import bankguru.pageUIs.RegisterPageUI;
 import commons.AbstractPage;
-import pageUIs.RegisterPageUI;
 
 public class RegisterPageObject extends AbstractPage {
 	private WebDriver driverGlobal;

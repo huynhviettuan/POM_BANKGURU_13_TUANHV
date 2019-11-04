@@ -11,12 +11,12 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
+import bankguru.pageObjects.HomePageObject;
+import bankguru.pageObjects.LoginPageObject;
+import bankguru.pageObjects.RegisterPageObject;
 import commons.AbstractPage;
-import pageObjects.HomePageObject;
-import pageObjects.LoginPageObject;
-import pageObjects.RegisterPageObject;
 
-public class Level_03_Page_Object_Pattern extends AbstractPage {
+public class Level_03_Page_Object_Pattern_Part_I extends AbstractPage {
 
 	WebDriver driver;
 	WebDriverWait explicitWait;
