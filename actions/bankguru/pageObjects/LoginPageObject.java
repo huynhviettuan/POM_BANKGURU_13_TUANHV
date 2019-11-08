@@ -4,36 +4,44 @@ import org.openqa.selenium.WebDriver;
 
 import bankguru.pageUIs.LoginPageUI;
 import commons.AbstractPage;
+import commons.PageGeneratorManager;
 
 public class LoginPageObject extends AbstractPage {
-	private WebDriver driverGlobal;
+	private WebDriver driver;
 
-	public LoginPageObject(WebDriver driverLocal) {
-		driverGlobal = driverLocal;
+	public LoginPageObject(WebDriver driver) {
+		this.driver = driver;
 	}
 
 	public String getLoginPageURL() {
-		return getCurrentPageURL(driverGlobal);
+		return getCurrentPageURL(driver);
 	}
 
-	public void clickToHereLink() {
-		waitToElementVisible(driverGlobal, LoginPageUI.HERE_LINK);
-		clickToElement(driverGlobal, LoginPageUI.HERE_LINK);
+	public boolean isLoginFormDisplayed() {
+		waitToElementVisible(driver, LoginPageUI.LOGIN_FORM);
+		return isElementDisplayed(driver, LoginPageUI.LOGIN_FORM);
+	}
+
+	public RegisterPageObject clickToHereLink() {
+		waitToElementVisible(driver, LoginPageUI.HERE_LINK);
+		clickToElement(driver, LoginPageUI.HERE_LINK);
+		return PageGeneratorManager.getRegisterPage(driver);
 	}
 
 	public void inputToUserIDTextbox(String userIDValue) {
-		waitToElementVisible(driverGlobal, LoginPageUI.USERNAME_TEXTBOX);
-		sendkeyToElement(driverGlobal, LoginPageUI.USERNAME_TEXTBOX, userIDValue);
+		waitToElementVisible(driver, LoginPageUI.USERNAME_TEXTBOX);
+		sendkeyToElement(driver, LoginPageUI.USERNAME_TEXTBOX, userIDValue);
 	}
 
 	public void inputToPasswrodTextbox(String passwordValue) {
-		waitToElementVisible(driverGlobal, LoginPageUI.PASSWORD_TEXTBOX);
-		sendkeyToElement(driverGlobal, LoginPageUI.PASSWORD_TEXTBOX, passwordValue);
+		waitToElementVisible(driver, LoginPageUI.PASSWORD_TEXTBOX);
+		sendkeyToElement(driver, LoginPageUI.PASSWORD_TEXTBOX, passwordValue);
 	}
 
-	public void clickToLoginButton() {
-		waitToElementVisible(driverGlobal, LoginPageUI.LOGIN_BUTTON);
-		clickToElement(driverGlobal, LoginPageUI.LOGIN_BUTTON);
+	public HomePageObject clickToLoginButton() {
+		waitToElementVisible(driver, LoginPageUI.LOGIN_BUTTON);
+		clickToElement(driver, LoginPageUI.LOGIN_BUTTON);
+		return PageGeneratorManager.getHomePage(driver);
 	}
 
 }

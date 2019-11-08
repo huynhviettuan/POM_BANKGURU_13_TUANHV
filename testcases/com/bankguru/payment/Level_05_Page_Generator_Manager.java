@@ -15,8 +15,9 @@ import bankguru.pageObjects.HomePageObject;
 import bankguru.pageObjects.LoginPageObject;
 import bankguru.pageObjects.RegisterPageObject;
 import commons.AbstractPage;
+import commons.PageGeneratorManager;
 
-public class Level_03_Page_Object_Pattern_Part_I extends AbstractPage {
+public class Level_05_Page_Generator_Manager extends AbstractPage {
 
 	WebDriver driver;
 	WebDriverWait explicitWait;
@@ -34,14 +35,16 @@ public class Level_03_Page_Object_Pattern_Part_I extends AbstractPage {
 		driver.manage().window().maximize();
 		email = "JohnWick" + randomNumber() + "@gmail.com";
 		driver.get("http://demo.guru99.com/v4/");
+
 	}
 
 	@Test
 	public void TC_01_RegisterToSystem() {
-		loginPage = new LoginPageObject(driver);
+		loginPage = PageGeneratorManager.getLoginPage(driver);
+		Assert.assertTrue(loginPage.isLoginFormDisplayed());
 		loginPageURL = loginPage.getLoginPageURL();
-		loginPage.clickToHereLink();
-		registerPage = new RegisterPageObject(driver);
+		registerPage = loginPage.clickToHereLink();
+		registerPage.isRegisterPageDisplayed();
 		registerPage.inputEmailIDTextbox(email);
 		registerPage.clickSubmitButton();
 		userIDValue = registerPage.getUserIDValue();
@@ -50,12 +53,14 @@ public class Level_03_Page_Object_Pattern_Part_I extends AbstractPage {
 
 	@Test
 	public void TC_02_LoginToSystem() {
-		registerPage.openLoginPage(loginPageURL);
+		loginPage = registerPage.openLoginPage(loginPageURL);
+		Assert.assertTrue(loginPage.isLoginFormDisplayed());
 		loginPage.inputToUserIDTextbox(userIDValue);
 		loginPage.inputToPasswrodTextbox(passwordValue);
-		loginPage.clickToLoginButton();
-		homePage = new HomePageObject(driver);
+		homePage = loginPage.clickToLoginButton();
 		Assert.assertTrue(homePage.isWelcomeMessageDisplayed());
+		loginPage = homePage.clickToLogOutLink();
+		Assert.assertTrue(loginPage.isLoginFormDisplayed());
 	}
 
 	@AfterClass
