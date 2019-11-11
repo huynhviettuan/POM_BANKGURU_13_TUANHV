@@ -13,7 +13,12 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class AbstractPage {
+import bankguru.pageObjects.DeleteCustomerPageObject;
+import bankguru.pageObjects.EditCustomerPageObject;
+import bankguru.pageObjects.NewCustomerPageObject;
+import bankguru.pageUIs.AbstractPageUI;
+
+public class AbstractPage extends AbstractPageUI {
 
 	public void openAnyURL(WebDriver driver, String urlValue) {
 		driver.get(urlValue);
@@ -64,6 +69,12 @@ public class AbstractPage {
 		element.click();
 	}
 
+	public void clickToElement(WebDriver driver, String locator, String... values) {
+		locator = String.format(locator, (Object[]) values);
+		element = driver.findElement(By.xpath(locator));
+		element.click();
+	}
+
 	public void sendkeyToElement(WebDriver driver, String locator, String value) {
 		element = driver.findElement(By.xpath(locator));
 		element.clear();
@@ -88,7 +99,7 @@ public class AbstractPage {
 		jsExcecutor.executeScript("arguments[0].click();", element);
 		Thread.sleep(2000);
 
-		waitExplicit = new WebDriverWait(driver, longTimeout);
+		waitExplicit = new WebDriverWait(driver, Constants.LONG_TIMEOUT);
 		waitExplicit.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.xpath(allItemLocator)));
 
 		elements = driver.findElements(By.xpath(allItemLocator));
@@ -266,31 +277,72 @@ public class AbstractPage {
 
 	public void waitToElementVisible(WebDriver driver, String locator) {
 		by = By.xpath(locator);
-		waitExplicit = new WebDriverWait(driver, longTimeout);
+		waitExplicit = new WebDriverWait(driver, Constants.LONG_TIMEOUT);
+		waitExplicit.until(ExpectedConditions.visibilityOfElementLocated(by));
+	}
+
+	public void waitToElementVisible(WebDriver driver, String locator, String... values) {
+		locator = String.format(locator, (Object[]) values);
+		by = By.xpath(locator);
+		waitExplicit = new WebDriverWait(driver, Constants.LONG_TIMEOUT);
 		waitExplicit.until(ExpectedConditions.visibilityOfElementLocated(by));
 	}
 
 	public void waitToElementPresence(WebDriver driver, String locator) {
 		by = By.xpath(locator);
-		waitExplicit = new WebDriverWait(driver, longTimeout);
+		waitExplicit = new WebDriverWait(driver, Constants.LONG_TIMEOUT);
 		waitExplicit.until(ExpectedConditions.presenceOfElementLocated(by));
 	}
 
 	public void waitToElementClickable(WebDriver driver, String locator) {
 		by = By.xpath(locator);
-		waitExplicit = new WebDriverWait(driver, longTimeout);
+		waitExplicit = new WebDriverWait(driver, Constants.LONG_TIMEOUT);
 		waitExplicit.until(ExpectedConditions.elementToBeClickable(by));
 	}
 
 	public void waitToElementInvisible(WebDriver driver, String locator) {
 		by = By.xpath(locator);
-		waitExplicit = new WebDriverWait(driver, longTimeout);
+		waitExplicit = new WebDriverWait(driver, Constants.LONG_TIMEOUT);
 		waitExplicit.until(ExpectedConditions.invisibilityOfElementLocated(by));
 	}
 
 	public void waitToAlertPresence(WebDriver driver) {
-		waitExplicit = new WebDriverWait(driver, longTimeout);
+		waitExplicit = new WebDriverWait(driver, Constants.LONG_TIMEOUT);
 		waitExplicit.until(ExpectedConditions.alertIsPresent());
+	}
+
+	public NewCustomerPageObject openNewCustomerPage(WebDriver driver) {
+		waitToElementVisible(driver, AbstractPageUI.NEW_CUSTOMER_LINK);
+		clickToElement(driver, AbstractPageUI.NEW_CUSTOMER_LINK);
+		return PageGeneratorManager.getNewCustomerPage(driver);
+	}
+
+	public EditCustomerPageObject openEditCustomerPage(WebDriver driver) {
+		waitToElementVisible(driver, AbstractPageUI.EDIT_CUSTOMER_LINK);
+		clickToElement(driver, AbstractPageUI.EDIT_CUSTOMER_LINK);
+		return PageGeneratorManager.getEditCustomerPage(driver);
+	}
+
+	public DeleteCustomerPageObject openDeleteCustomerPage(WebDriver driver) {
+		waitToElementVisible(driver, AbstractPageUI.DELETE_CUSTOMER_LINK);
+		clickToElement(driver, AbstractPageUI.DELETE_CUSTOMER_LINK);
+		return PageGeneratorManager.getDeleteCustomerPage(driver);
+	}
+
+	public AbstractPage openDynamicPage(WebDriver driver, String pagename) {
+		waitToElementVisible(driver, AbstractPageUI.DYNAMIC_PAGE_LINK, pagename);
+		clickToElement(driver, AbstractPageUI.DYNAMIC_PAGE_LINK, pagename);
+
+		switch (pagename) {
+		default:
+			return PageGeneratorManager.getHomePage(driver);
+		case "New Customer":
+			return PageGeneratorManager.getNewCustomerPage(driver);
+		case "Edit Customer":
+			return PageGeneratorManager.getEditCustomerPage(driver);
+		case "Delete Customer":
+			return PageGeneratorManager.getDeleteCustomerPage(driver);
+		}
 	}
 
 	By by;
@@ -301,6 +353,5 @@ public class AbstractPage {
 	List<WebElement> elements;
 	WebDriverWait waitExplicit;
 	JavascriptExecutor jsExcecutor;
-	long shortTimeout = 5;
-	long longTimeout = 30;
+
 }
