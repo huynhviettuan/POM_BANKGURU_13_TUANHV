@@ -9,12 +9,18 @@
 <!-- 				name="com.bankguru.payment.Level_07_Factory_Pattern_Advanced" /> -->
 <!-- 		</classes> -->
 <!-- 	</test> Test -->
+	<listeners>
+	<listener class-name = "org.uncommons.reportng.HTMLReporter"/>
+	<listener class-name = "org.uncommons.reportng.JUnitXMLReporter"/>
+	<listener class-name = "commons.ExtentReportListener"/>
+	<listener class-name = "commons.MethodListener"/>
+	</listeners>
 	
 	<test name="Run on CHROME browser">
 		<parameter name="browser" value="chrome"></parameter>
 		<classes>
 			<class
-				name="com.bankguru.payment.Level_09_Dynamic_Locator_RestParameter" />
+				name="com.bankguru.payment.Level_11_Assert_Verify_Log_ReportHTML" />
 		</classes>
 	</test> <!-- Test -->
 	

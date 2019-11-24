@@ -2,6 +2,7 @@ package commons;
 
 import java.util.List;
 import java.util.Set;
+import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
@@ -131,8 +132,16 @@ public class AbstractPage extends AbstractPageUI {
 	}
 
 	public boolean isElementDisplayed(WebDriver driver, String locator) {
-		element = driver.findElement(By.xpath(locator));
-		return element.isDisplayed();
+		overideImplicitTimeout(driver, Constants.SHORT_TIMEOUT);
+		try {
+			element = driver.findElement(By.xpath(locator));
+			overideImplicitTimeout(driver, Constants.LONG_TIMEOUT);
+			return element.isDisplayed();
+		} catch (Exception ex) {
+			System.out.println(ex.getMessage());
+			overideImplicitTimeout(driver, Constants.LONG_TIMEOUT);
+			return false;
+		}
 	}
 
 	public boolean isElementSelected(WebDriver driver, String locator) {
@@ -259,6 +268,7 @@ public class AbstractPage extends AbstractPageUI {
 	}
 
 	public void removeAttributeInDOM(WebDriver driver, String locator, String attributeRemove) {
+		jsExcecutor = (JavascriptExecutor) driver;
 		element = driver.findElement(By.xpath(locator));
 		jsExcecutor.executeScript("arguments[0].removeAttribute('" + attributeRemove + "');", element);
 	}
@@ -301,9 +311,17 @@ public class AbstractPage extends AbstractPageUI {
 	}
 
 	public void waitToElementInvisible(WebDriver driver, String locator) {
-		by = By.xpath(locator);
-		waitExplicit = new WebDriverWait(driver, Constants.LONG_TIMEOUT);
-		waitExplicit.until(ExpectedConditions.invisibilityOfElementLocated(by));
+		waitExplicit = new WebDriverWait(driver, Constants.SHORT_TIMEOUT);
+		try {
+			by = By.xpath(locator);
+			waitExplicit.until(ExpectedConditions.invisibilityOfElementLocated(by));
+		} catch (Exception ex) {
+			System.out.println(ex.getMessage());
+		}
+	}
+
+	public void overideImplicitTimeout(WebDriver driver, long timeInSecond) {
+		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 	}
 
 	public void waitToAlertPresence(WebDriver driver) {
@@ -342,6 +360,12 @@ public class AbstractPage extends AbstractPageUI {
 			return PageGeneratorManager.getEditCustomerPage(driver);
 		case "Delete Customer":
 			return PageGeneratorManager.getDeleteCustomerPage(driver);
+		case "New Account":
+			return PageGeneratorManager.getNewAccountPage(driver);
+		case "Edit Account":
+			return PageGeneratorManager.getEditAccountPage(driver);
+		case "Delete Account":
+			return PageGeneratorManager.getDeleteAccountPage(driver);
 		}
 	}
 
@@ -353,5 +377,4 @@ public class AbstractPage extends AbstractPageUI {
 	List<WebElement> elements;
 	WebDriverWait waitExplicit;
 	JavascriptExecutor jsExcecutor;
-
 }

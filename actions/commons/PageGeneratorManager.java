@@ -2,10 +2,13 @@ package commons;
 
 import org.openqa.selenium.WebDriver;
 
+import bankguru.pageObjects.DeleteAccountPageObject;
 import bankguru.pageObjects.DeleteCustomerPageObject;
+import bankguru.pageObjects.EditAccountPageObject;
 import bankguru.pageObjects.EditCustomerPageObject;
 import bankguru.pageObjects.HomePageObject;
 import bankguru.pageObjects.LoginPageObject;
+import bankguru.pageObjects.NewAccountPageObject;
 import bankguru.pageObjects.NewCustomerPageObject;
 import bankguru.pageObjects.RegisterPageObject;
 
@@ -32,5 +35,17 @@ public class PageGeneratorManager {
 
 	public static DeleteCustomerPageObject getDeleteCustomerPage(WebDriver driver) {
 		return new DeleteCustomerPageObject(driver);
+	}
+
+	public static NewAccountPageObject getNewAccountPage(WebDriver driver) {
+		return new NewAccountPageObject(driver);
+	}
+
+	public static EditAccountPageObject getEditAccountPage(WebDriver driver) {
+		return new EditAccountPageObject(driver);
+	}
+
+	public static DeleteAccountPageObject getDeleteAccountPage(WebDriver driver) {
+		return new DeleteAccountPageObject(driver);
 	}
 }

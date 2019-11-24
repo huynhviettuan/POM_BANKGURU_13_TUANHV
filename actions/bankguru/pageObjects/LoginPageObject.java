@@ -3,6 +3,7 @@ package bankguru.pageObjects;
 import org.openqa.selenium.WebDriver;
 
 import bankguru.pageUIs.LoginPageUI;
+import bankguru.pageUIs.RegisterPageUI;
 import commons.AbstractPage;
 import commons.PageGeneratorManager;
 
@@ -44,4 +45,13 @@ public class LoginPageObject extends AbstractPage {
 		return PageGeneratorManager.getHomePage(driver);
 	}
 
+	public boolean isEmailIDTextboxAtRegisterPageUndisplayed() {
+		waitToElementInvisible(driver, RegisterPageUI.EMAIL_ID_TEXTBOX);
+		return isElementDisplayed(driver, RegisterPageUI.EMAIL_ID_TEXTBOX);
+	}
+
+	public boolean isFileUploadLinkisdisplay() {
+		waitToElementInvisible(driver, LoginPageUI.FILE_UPLOAD_LINK_IN_NAV_BAR);
+		return isElementDisplayed(driver, LoginPageUI.FILE_UPLOAD_LINK_IN_NAV_BAR);
+	}
 }
