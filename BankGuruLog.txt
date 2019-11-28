@@ -1,0 +1,25 @@
+2019-11-26 19:31:02,306 INFO  com.bankguru.payment.Level_12_Dynamic_Page_Element -  -------------------------- PASSED -------------------------- 
+2019-11-26 19:31:02,420 INFO  com.bankguru.payment.Level_12_Dynamic_Page_Element - Actual = AUTOMATION TESTING
+2019-11-26 19:31:02,420 INFO  com.bankguru.payment.Level_12_Dynamic_Page_Element - Expected = AUTOMATION TESTING
+2019-11-26 19:31:02,420 INFO  com.bankguru.payment.Level_12_Dynamic_Page_Element -  -------------------------- PASSED -------------------------- 
+2019-11-26 19:31:02,492 INFO  com.bankguru.payment.Level_12_Dynamic_Page_Element - Actual = 1989-01-01
+2019-11-26 19:31:02,492 INFO  com.bankguru.payment.Level_12_Dynamic_Page_Element - Expected = 1989-01-01
+2019-11-26 19:31:02,492 INFO  com.bankguru.payment.Level_12_Dynamic_Page_Element -  -------------------------- PASSED -------------------------- 
+2019-11-26 19:31:02,568 INFO  com.bankguru.payment.Level_12_Dynamic_Page_Element - Actual = PO Box 912 831 Duis Avenue
+2019-11-26 19:31:02,568 INFO  com.bankguru.payment.Level_12_Dynamic_Page_Element - Expected = PO Box 912 831 Duis Avenue
+2019-11-26 19:31:02,568 INFO  com.bankguru.payment.Level_12_Dynamic_Page_Element -  -------------------------- PASSED -------------------------- 
+2019-11-26 19:31:02,634 INFO  com.bankguru.payment.Level_12_Dynamic_Page_Element - Actual = Tampa
+2019-11-26 19:31:02,634 INFO  com.bankguru.payment.Level_12_Dynamic_Page_Element - Expected = Tampa
+2019-11-26 19:31:02,634 INFO  com.bankguru.payment.Level_12_Dynamic_Page_Element -  -------------------------- PASSED -------------------------- 
+2019-11-26 19:31:02,704 INFO  com.bankguru.payment.Level_12_Dynamic_Page_Element - Actual = FL
+2019-11-26 19:31:02,704 INFO  com.bankguru.payment.Level_12_Dynamic_Page_Element - Expected = FL
+2019-11-26 19:31:02,704 INFO  com.bankguru.payment.Level_12_Dynamic_Page_Element -  -------------------------- PASSED -------------------------- 
+2019-11-26 19:31:02,775 INFO  com.bankguru.payment.Level_12_Dynamic_Page_Element - Actual = 451250
+2019-11-26 19:31:02,776 INFO  com.bankguru.payment.Level_12_Dynamic_Page_Element - Expected = 451250
+2019-11-26 19:31:02,776 INFO  com.bankguru.payment.Level_12_Dynamic_Page_Element -  -------------------------- PASSED -------------------------- 
+2019-11-26 19:31:02,854 INFO  com.bankguru.payment.Level_12_Dynamic_Page_Element - Actual = 0782241221
+2019-11-26 19:31:02,854 INFO  com.bankguru.payment.Level_12_Dynamic_Page_Element - Expected = 0782241221
+2019-11-26 19:31:02,854 INFO  com.bankguru.payment.Level_12_Dynamic_Page_Element -  -------------------------- PASSED -------------------------- 
+2019-11-26 19:31:02,924 INFO  com.bankguru.payment.Level_12_Dynamic_Page_Element - Actual = testautotest212@gmail.com
+2019-11-26 19:31:02,925 INFO  com.bankguru.payment.Level_12_Dynamic_Page_Element - Expected = testautotest212@gmail.com
+2019-11-26 19:31:02,925 INFO  com.bankguru.payment.Level_12_Dynamic_Page_Element -  -------------------------- PASSED -------------------------- 

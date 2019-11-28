@@ -18,4 +18,12 @@ public class AbstractPageUI {
 	public static final String LOG_OUT_LINK = "//a[text()='Log out']";
 
 	public static final String DYNAMIC_PAGE_LINK = "//a[text()='%s']";
+	public static final String DYNAMIC_TEXTBOX = "//input[@name='%s']";
+	public static final String DYNAMIC_cHECKBOX = "//input[@name='%s']";
+	public static final String DYNAMIC_TEXTAREA = "//textarea[@name='%s']";
+	public static final String DYNAMIC_BUTTON = "//input[@name='%s']";
+	public static final String DYNAMIC_LINK = "//a[@name='%s']";
+	public static final String DYNAMIC_VERIFY_TEXT = "//td[contains(text(),'%s')]/following-sibling::td";
+	public static final String DYNAMIC_PAGE_TITLE = "//p[@class='heading3' and text()='%s']";
+
 }

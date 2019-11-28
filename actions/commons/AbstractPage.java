@@ -82,6 +82,13 @@ public class AbstractPage extends AbstractPageUI {
 		element.sendKeys(value);
 	}
 
+	public void sendkeyToElement(WebDriver driver, String locator, String sendkeyValue, String... values) {
+		locator = String.format(locator, (Object[]) values);
+		element = driver.findElement(By.xpath(locator));
+		element.clear();
+		element.sendKeys(sendkeyValue);
+	}
+
 	public void selectItemInDropdrown(WebDriver driver, String locator, String valueItem) {
 		select = new Select(driver.findElement(By.xpath(locator)));
 		select.selectByVisibleText(valueItem);
@@ -126,6 +133,12 @@ public class AbstractPage extends AbstractPageUI {
 		return element.getText();
 	}
 
+	public String getTextElement(WebDriver driver, String locator, String... values) {
+		locator = String.format(locator, (Object[]) values);
+		element = driver.findElement(By.xpath(locator));
+		return element.getText();
+	}
+
 	public void countNumberofElement(WebDriver driver, String locator) {
 		elements = driver.findElements(By.xpath(locator));
 		elements.size();
@@ -134,6 +147,20 @@ public class AbstractPage extends AbstractPageUI {
 	public boolean isElementDisplayed(WebDriver driver, String locator) {
 		overideImplicitTimeout(driver, Constants.SHORT_TIMEOUT);
 		try {
+			element = driver.findElement(By.xpath(locator));
+			overideImplicitTimeout(driver, Constants.LONG_TIMEOUT);
+			return element.isDisplayed();
+		} catch (Exception ex) {
+			System.out.println(ex.getMessage());
+			overideImplicitTimeout(driver, Constants.LONG_TIMEOUT);
+			return false;
+		}
+	}
+
+	public boolean isElementDisplayed(WebDriver driver, String locator, String... values) {
+		overideImplicitTimeout(driver, Constants.SHORT_TIMEOUT);
+		try {
+			locator = String.format(locator, (Object[]) values);
 			element = driver.findElement(By.xpath(locator));
 			overideImplicitTimeout(driver, Constants.LONG_TIMEOUT);
 			return element.isDisplayed();
@@ -273,6 +300,13 @@ public class AbstractPage extends AbstractPageUI {
 		jsExcecutor.executeScript("arguments[0].removeAttribute('" + attributeRemove + "');", element);
 	}
 
+	public void removeAttributeInDOM(WebDriver driver, String locator, String attributeRemove, String... values) {
+		jsExcecutor = (JavascriptExecutor) driver;
+		locator = String.format(locator, (Object[]) values);
+		element = driver.findElement(By.xpath(locator));
+		jsExcecutor.executeScript("arguments[0].removeAttribute('" + attributeRemove + "');", element);
+	}
+
 	public void highlightElement() {
 		String originalStyle = element.getAttribute("style");
 		jsExcecutor.executeScript("arguments[0].setAttribute(arguments[1], arguments[2])", element, "style", "border: 5px solid red; border-style: dashed;");
@@ -367,6 +401,34 @@ public class AbstractPage extends AbstractPageUI {
 		case "Delete Account":
 			return PageGeneratorManager.getDeleteAccountPage(driver);
 		}
+	}
+
+	public void inputToDynamicTextbox(WebDriver driver, String nameAttributeValue, String valueToSendkey) {
+		waitToElementVisible(driver, AbstractPageUI.DYNAMIC_TEXTBOX, nameAttributeValue);
+		if (nameAttributeValue.equals("dob")) {
+			removeAttributeInDOM(driver, AbstractPageUI.DYNAMIC_TEXTBOX, "type", nameAttributeValue);
+		}
+		sendkeyToElement(driver, AbstractPageUI.DYNAMIC_TEXTBOX, valueToSendkey, nameAttributeValue);
+	}
+
+	public void inputToDynamicTextArea(WebDriver driver, String textareanameID, String valueToSendkey) {
+		waitToElementVisible(driver, AbstractPageUI.DYNAMIC_TEXTAREA, textareanameID);
+		sendkeyToElement(driver, AbstractPageUI.DYNAMIC_TEXTAREA, valueToSendkey, textareanameID);
+	}
+
+	public void clickToDynamicButton(WebDriver driver, String buttonnameID) {
+		waitToElementVisible(driver, AbstractPageUI.DYNAMIC_BUTTON, buttonnameID);
+		clickToElement(driver, AbstractPageUI.DYNAMIC_BUTTON, buttonnameID);
+	}
+
+	public boolean isDynamicPageOrMessageDisplay(WebDriver driver, String pageHeadingName) {
+		waitToElementVisible(driver, AbstractPageUI.DYNAMIC_PAGE_TITLE, pageHeadingName);
+		return isElementDisplayed(driver, AbstractPageUI.DYNAMIC_PAGE_TITLE, pageHeadingName);
+	}
+
+	public String getDynamicTextInTable(WebDriver driver, String rowName) {
+		waitToElementVisible(driver, AbstractPageUI.DYNAMIC_VERIFY_TEXT, rowName);
+		return getTextElement(driver, AbstractPageUI.DYNAMIC_VERIFY_TEXT, rowName);
 	}
 
 	By by;
