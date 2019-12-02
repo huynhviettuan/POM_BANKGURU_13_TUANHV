@@ -25,5 +25,5 @@ public class AbstractPageUI {
 	public static final String DYNAMIC_LINK = "//a[@name='%s']";
 	public static final String DYNAMIC_VERIFY_TEXT = "//td[contains(text(),'%s')]/following-sibling::td";
 	public static final String DYNAMIC_PAGE_TITLE = "//p[@class='heading3' and text()='%s']";
-
+	public static final String DYNAMIC_DROPDOWNLIST = "//select[@name='%s']";
 }

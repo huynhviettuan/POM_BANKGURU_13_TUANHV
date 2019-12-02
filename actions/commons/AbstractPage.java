@@ -94,6 +94,12 @@ public class AbstractPage extends AbstractPageUI {
 		select.selectByVisibleText(valueItem);
 	}
 
+	public void selectItemInDropdrown(WebDriver driver, String locator, String valueItem, String... values) {
+		locator = String.format(locator, (Object[]) values);
+		select = new Select(driver.findElement(By.xpath(locator)));
+		select.selectByVisibleText(valueItem);
+	}
+
 	public String getFirstItemInDropdown(WebDriver driver, String locator) {
 		select = new Select(driver.findElement(By.xpath(locator)));
 		return select.getFirstSelectedOption().getText();
@@ -400,6 +406,14 @@ public class AbstractPage extends AbstractPageUI {
 			return PageGeneratorManager.getEditAccountPage(driver);
 		case "Delete Account":
 			return PageGeneratorManager.getDeleteAccountPage(driver);
+		case "Deposit":
+			return PageGeneratorManager.getDepositPage(driver);
+		case "Withdrawal":
+			return PageGeneratorManager.getWithdrawalPage(driver);
+		case "Fund Transfer":
+			return PageGeneratorManager.getFundTransferPage(driver);
+		case "Balance Enquiry":
+			return PageGeneratorManager.getBalanceEnquiryPage(driver);
 		}
 	}
 
@@ -429,6 +443,27 @@ public class AbstractPage extends AbstractPageUI {
 	public String getDynamicTextInTable(WebDriver driver, String rowName) {
 		waitToElementVisible(driver, AbstractPageUI.DYNAMIC_VERIFY_TEXT, rowName);
 		return getTextElement(driver, AbstractPageUI.DYNAMIC_VERIFY_TEXT, rowName);
+	}
+
+	public void selectItemInDynamicDropdownList(WebDriver driver, String dropdownID, String valueItem) {
+		waitToElementVisible(driver, AbstractPageUI.DYNAMIC_DROPDOWNLIST, dropdownID);
+		selectItemInDropdrown(driver, AbstractPageUI.DYNAMIC_DROPDOWNLIST, valueItem, dropdownID);
+	}
+
+	public void sleepInSecond(long seconds) {
+		try {
+			Thread.sleep(seconds);
+		} catch (Exception ex) {
+			System.out.println(ex);
+		}
+	}
+
+	public boolean isDynamicAlertMessageDisplayed(WebDriver driver, String expectedAlertMessage) {
+		waitToAlertPresence(driver);
+		String actualAlertMessage = getTextAlert(driver);
+		acceptAlert(driver);
+		sleepInSecond(10);
+		return actualAlertMessage.equals(expectedAlertMessage);
 	}
 
 	By by;

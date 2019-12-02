@@ -1,25 +1,237 @@
-2019-11-26 19:31:02,306 INFO  com.bankguru.payment.Level_12_Dynamic_Page_Element -  -------------------------- PASSED -------------------------- 
-2019-11-26 19:31:02,420 INFO  com.bankguru.payment.Level_12_Dynamic_Page_Element - Actual = AUTOMATION TESTING
-2019-11-26 19:31:02,420 INFO  com.bankguru.payment.Level_12_Dynamic_Page_Element - Expected = AUTOMATION TESTING
-2019-11-26 19:31:02,420 INFO  com.bankguru.payment.Level_12_Dynamic_Page_Element -  -------------------------- PASSED -------------------------- 
-2019-11-26 19:31:02,492 INFO  com.bankguru.payment.Level_12_Dynamic_Page_Element - Actual = 1989-01-01
-2019-11-26 19:31:02,492 INFO  com.bankguru.payment.Level_12_Dynamic_Page_Element - Expected = 1989-01-01
-2019-11-26 19:31:02,492 INFO  com.bankguru.payment.Level_12_Dynamic_Page_Element -  -------------------------- PASSED -------------------------- 
-2019-11-26 19:31:02,568 INFO  com.bankguru.payment.Level_12_Dynamic_Page_Element - Actual = PO Box 912 831 Duis Avenue
-2019-11-26 19:31:02,568 INFO  com.bankguru.payment.Level_12_Dynamic_Page_Element - Expected = PO Box 912 831 Duis Avenue
-2019-11-26 19:31:02,568 INFO  com.bankguru.payment.Level_12_Dynamic_Page_Element -  -------------------------- PASSED -------------------------- 
-2019-11-26 19:31:02,634 INFO  com.bankguru.payment.Level_12_Dynamic_Page_Element - Actual = Tampa
-2019-11-26 19:31:02,634 INFO  com.bankguru.payment.Level_12_Dynamic_Page_Element - Expected = Tampa
-2019-11-26 19:31:02,634 INFO  com.bankguru.payment.Level_12_Dynamic_Page_Element -  -------------------------- PASSED -------------------------- 
-2019-11-26 19:31:02,704 INFO  com.bankguru.payment.Level_12_Dynamic_Page_Element - Actual = FL
-2019-11-26 19:31:02,704 INFO  com.bankguru.payment.Level_12_Dynamic_Page_Element - Expected = FL
-2019-11-26 19:31:02,704 INFO  com.bankguru.payment.Level_12_Dynamic_Page_Element -  -------------------------- PASSED -------------------------- 
-2019-11-26 19:31:02,775 INFO  com.bankguru.payment.Level_12_Dynamic_Page_Element - Actual = 451250
-2019-11-26 19:31:02,776 INFO  com.bankguru.payment.Level_12_Dynamic_Page_Element - Expected = 451250
-2019-11-26 19:31:02,776 INFO  com.bankguru.payment.Level_12_Dynamic_Page_Element -  -------------------------- PASSED -------------------------- 
-2019-11-26 19:31:02,854 INFO  com.bankguru.payment.Level_12_Dynamic_Page_Element - Actual = 0782241221
-2019-11-26 19:31:02,854 INFO  com.bankguru.payment.Level_12_Dynamic_Page_Element - Expected = 0782241221
-2019-11-26 19:31:02,854 INFO  com.bankguru.payment.Level_12_Dynamic_Page_Element -  -------------------------- PASSED -------------------------- 
-2019-11-26 19:31:02,924 INFO  com.bankguru.payment.Level_12_Dynamic_Page_Element - Actual = testautotest212@gmail.com
-2019-11-26 19:31:02,925 INFO  com.bankguru.payment.Level_12_Dynamic_Page_Element - Expected = testautotest212@gmail.com
-2019-11-26 19:31:02,925 INFO  com.bankguru.payment.Level_12_Dynamic_Page_Element -  -------------------------- PASSED -------------------------- 
+2019-12-02 19:10:20,820 INFO  com.bankguru.payment.Level_13_Payment_Coding - TC_01_CreateNewCustomer - Step 01 : Open New Customer page
+2019-12-02 19:10:20,821 INFO  com.bankguru.payment.Level_13_Payment_Coding - TC_01_CreateNewCustomer - Step 02 : Input data to maddatory/required fields
+2019-12-02 19:10:23,144 INFO  com.bankguru.payment.Level_13_Payment_Coding - TC_01_CreateNewCustomer - Step 03 : Click to Submit Button
+2019-12-02 19:10:25,078 INFO  com.bankguru.payment.Level_13_Payment_Coding - TC_01_CreateNewCustomer - Step 04 : Verify success message is displayed
+2019-12-02 19:10:25,156 INFO  com.bankguru.payment.Level_13_Payment_Coding -  -------------------------- PASSED -------------------------- 
+2019-12-02 19:10:25,158 INFO  com.bankguru.payment.Level_13_Payment_Coding - TC_01_CreateNewCustomer - Step 05 : Verify New Customer created success
+2019-12-02 19:10:25,236 INFO  com.bankguru.payment.Level_13_Payment_Coding - Actual = John Cena
+2019-12-02 19:10:25,236 INFO  com.bankguru.payment.Level_13_Payment_Coding - Expected = John Cena
+2019-12-02 19:10:25,237 INFO  com.bankguru.payment.Level_13_Payment_Coding -  -------------------------- PASSED -------------------------- 
+2019-12-02 19:10:25,310 INFO  com.bankguru.payment.Level_13_Payment_Coding - Actual = 1989-01-01
+2019-12-02 19:10:25,311 INFO  com.bankguru.payment.Level_13_Payment_Coding - Expected = 1989-01-01
+2019-12-02 19:10:25,311 INFO  com.bankguru.payment.Level_13_Payment_Coding -  -------------------------- PASSED -------------------------- 
+2019-12-02 19:10:25,385 INFO  com.bankguru.payment.Level_13_Payment_Coding - Actual = PO Box 912 831 Duis Avenue
+2019-12-02 19:10:25,385 INFO  com.bankguru.payment.Level_13_Payment_Coding - Expected = PO Box 912 831 Duis Avenue
+2019-12-02 19:10:25,385 INFO  com.bankguru.payment.Level_13_Payment_Coding -  -------------------------- PASSED -------------------------- 
+2019-12-02 19:10:25,472 INFO  com.bankguru.payment.Level_13_Payment_Coding - Actual = Tampa
+2019-12-02 19:10:25,472 INFO  com.bankguru.payment.Level_13_Payment_Coding - Expected = Tampa
+2019-12-02 19:10:25,472 INFO  com.bankguru.payment.Level_13_Payment_Coding -  -------------------------- PASSED -------------------------- 
+2019-12-02 19:10:25,563 INFO  com.bankguru.payment.Level_13_Payment_Coding - Actual = FL
+2019-12-02 19:10:25,563 INFO  com.bankguru.payment.Level_13_Payment_Coding - Expected = FL
+2019-12-02 19:10:25,563 INFO  com.bankguru.payment.Level_13_Payment_Coding -  -------------------------- PASSED -------------------------- 
+2019-12-02 19:10:25,642 INFO  com.bankguru.payment.Level_13_Payment_Coding - Actual = 451250
+2019-12-02 19:10:25,642 INFO  com.bankguru.payment.Level_13_Payment_Coding - Expected = 451250
+2019-12-02 19:10:25,642 INFO  com.bankguru.payment.Level_13_Payment_Coding -  -------------------------- PASSED -------------------------- 
+2019-12-02 19:10:25,719 INFO  com.bankguru.payment.Level_13_Payment_Coding - Actual = 0782241221
+2019-12-02 19:10:25,719 INFO  com.bankguru.payment.Level_13_Payment_Coding - Expected = 0782241221
+2019-12-02 19:10:25,719 INFO  com.bankguru.payment.Level_13_Payment_Coding -  -------------------------- PASSED -------------------------- 
+2019-12-02 19:10:25,807 INFO  com.bankguru.payment.Level_13_Payment_Coding - Actual = johncena36522@gmail.com
+2019-12-02 19:10:25,807 INFO  com.bankguru.payment.Level_13_Payment_Coding - Expected = johncena36522@gmail.com
+2019-12-02 19:10:25,808 INFO  com.bankguru.payment.Level_13_Payment_Coding -  -------------------------- PASSED -------------------------- 
+2019-12-02 19:10:25,890 INFO  com.bankguru.payment.Level_13_Payment_Coding - TC_02_EditCustomerAccount - Step 01 : Open Edit Customer page
+2019-12-02 19:10:27,281 INFO  com.bankguru.payment.Level_13_Payment_Coding - TC_02_EditCustomerAccount - Step 02 : Enter Customer ID
+2019-12-02 19:10:29,243 INFO  com.bankguru.payment.Level_13_Payment_Coding - TC_02_EditCustomerAccount - Step 03 : Enter edit data to fields
+2019-12-02 19:10:30,398 INFO  com.bankguru.payment.Level_13_Payment_Coding - TC_02_EditCustomerAccount - Step 04 : Click Submit button
+2019-12-02 19:10:32,571 INFO  com.bankguru.payment.Level_13_Payment_Coding - TC_02_EditCustomerAccount - Step 05 : Verify success message is displayed
+2019-12-02 19:10:32,662 INFO  com.bankguru.payment.Level_13_Payment_Coding -  -------------------------- PASSED -------------------------- 
+2019-12-02 19:10:32,663 INFO  com.bankguru.payment.Level_13_Payment_Coding - TC_02_EditCustomerAccount - Step 06 : Verify Edit Customer Success 
+2019-12-02 19:10:32,724 INFO  com.bankguru.payment.Level_13_Payment_Coding - Actual = 81427
+2019-12-02 19:10:32,724 INFO  com.bankguru.payment.Level_13_Payment_Coding - Expected = 81427
+2019-12-02 19:10:32,724 INFO  com.bankguru.payment.Level_13_Payment_Coding -  -------------------------- PASSED -------------------------- 
+2019-12-02 19:10:32,780 INFO  com.bankguru.payment.Level_13_Payment_Coding - Actual = John Cena
+2019-12-02 19:10:32,780 INFO  com.bankguru.payment.Level_13_Payment_Coding - Expected = John Cena
+2019-12-02 19:10:32,781 INFO  com.bankguru.payment.Level_13_Payment_Coding -  -------------------------- PASSED -------------------------- 
+2019-12-02 19:10:32,846 INFO  com.bankguru.payment.Level_13_Payment_Coding - Actual = 1989-01-01
+2019-12-02 19:10:32,846 INFO  com.bankguru.payment.Level_13_Payment_Coding - Expected = 1989-01-01
+2019-12-02 19:10:32,846 INFO  com.bankguru.payment.Level_13_Payment_Coding -  -------------------------- PASSED -------------------------- 
+2019-12-02 19:10:32,901 INFO  com.bankguru.payment.Level_13_Payment_Coding - Actual = PO 831 Luis Juan
+2019-12-02 19:10:32,901 INFO  com.bankguru.payment.Level_13_Payment_Coding - Expected = PO 831 Luis Juan
+2019-12-02 19:10:32,901 INFO  com.bankguru.payment.Level_13_Payment_Coding -  -------------------------- PASSED -------------------------- 
+2019-12-02 19:10:32,970 INFO  com.bankguru.payment.Level_13_Payment_Coding - Actual = Tampaone
+2019-12-02 19:10:32,970 INFO  com.bankguru.payment.Level_13_Payment_Coding - Expected = Tampaone
+2019-12-02 19:10:32,971 INFO  com.bankguru.payment.Level_13_Payment_Coding -  -------------------------- PASSED -------------------------- 
+2019-12-02 19:10:33,049 INFO  com.bankguru.payment.Level_13_Payment_Coding - Actual = FLos
+2019-12-02 19:10:33,050 INFO  com.bankguru.payment.Level_13_Payment_Coding - Expected = FLos
+2019-12-02 19:10:33,050 INFO  com.bankguru.payment.Level_13_Payment_Coding -  -------------------------- PASSED -------------------------- 
+2019-12-02 19:10:33,115 INFO  com.bankguru.payment.Level_13_Payment_Coding - Actual = 452340
+2019-12-02 19:10:33,115 INFO  com.bankguru.payment.Level_13_Payment_Coding - Expected = 452340
+2019-12-02 19:10:33,115 INFO  com.bankguru.payment.Level_13_Payment_Coding -  -------------------------- PASSED -------------------------- 
+2019-12-02 19:10:33,213 INFO  com.bankguru.payment.Level_13_Payment_Coding - Actual = 0782241663
+2019-12-02 19:10:33,213 INFO  com.bankguru.payment.Level_13_Payment_Coding - Expected = 0782241663
+2019-12-02 19:10:33,214 INFO  com.bankguru.payment.Level_13_Payment_Coding -  -------------------------- PASSED -------------------------- 
+2019-12-02 19:10:33,270 INFO  com.bankguru.payment.Level_13_Payment_Coding - Actual = batiztuta2092@gmail.com
+2019-12-02 19:10:33,270 INFO  com.bankguru.payment.Level_13_Payment_Coding - Expected = batiztuta2092@gmail.com
+2019-12-02 19:10:33,270 INFO  com.bankguru.payment.Level_13_Payment_Coding -  -------------------------- PASSED -------------------------- 
+2019-12-02 19:10:33,273 INFO  com.bankguru.payment.Level_13_Payment_Coding - TC_03_AddNewAccount - Create first account
+2019-12-02 19:10:33,273 INFO  com.bankguru.payment.Level_13_Payment_Coding - TC_03_AddNewAccount - Step 01 : Open Add New Account page
+2019-12-02 19:10:34,623 INFO  com.bankguru.payment.Level_13_Payment_Coding - TC_03_AddNewAccount - Step 02 : Enter new account data to fields
+2019-12-02 19:10:35,015 INFO  com.bankguru.payment.Level_13_Payment_Coding - TC_03_AddNewAccount - Step 03 : Click to Submit button
+2019-12-02 19:10:36,944 INFO  com.bankguru.payment.Level_13_Payment_Coding - TC_03_AddNewAccount - Step 04 : Verify success message is displayed
+2019-12-02 19:10:37,011 INFO  com.bankguru.payment.Level_13_Payment_Coding -  -------------------------- PASSED -------------------------- 
+2019-12-02 19:10:37,011 INFO  com.bankguru.payment.Level_13_Payment_Coding - TC_04_AddNewAccount - Step 05 : Verify Add New Account Success
+2019-12-02 19:10:37,075 INFO  com.bankguru.payment.Level_13_Payment_Coding - Actual = 81427
+2019-12-02 19:10:37,075 INFO  com.bankguru.payment.Level_13_Payment_Coding - Expected = 81427
+2019-12-02 19:10:37,075 INFO  com.bankguru.payment.Level_13_Payment_Coding -  -------------------------- PASSED -------------------------- 
+2019-12-02 19:10:37,137 INFO  com.bankguru.payment.Level_13_Payment_Coding - Actual = John Cena
+2019-12-02 19:10:37,138 INFO  com.bankguru.payment.Level_13_Payment_Coding - Expected = John Cena
+2019-12-02 19:10:37,138 INFO  com.bankguru.payment.Level_13_Payment_Coding -  -------------------------- PASSED -------------------------- 
+2019-12-02 19:10:37,205 INFO  com.bankguru.payment.Level_13_Payment_Coding - Actual = batiztuta2092@gmail.com
+2019-12-02 19:10:37,205 INFO  com.bankguru.payment.Level_13_Payment_Coding - Expected = batiztuta2092@gmail.com
+2019-12-02 19:10:37,206 INFO  com.bankguru.payment.Level_13_Payment_Coding -  -------------------------- PASSED -------------------------- 
+2019-12-02 19:10:37,276 INFO  com.bankguru.payment.Level_13_Payment_Coding - Actual = Savings
+2019-12-02 19:10:37,276 INFO  com.bankguru.payment.Level_13_Payment_Coding - Expected = Savings
+2019-12-02 19:10:37,276 INFO  com.bankguru.payment.Level_13_Payment_Coding -  -------------------------- PASSED -------------------------- 
+2019-12-02 19:10:37,394 INFO  com.bankguru.payment.Level_13_Payment_Coding - Actual = 2019-12-02
+2019-12-02 19:10:37,394 INFO  com.bankguru.payment.Level_13_Payment_Coding - Expected = 2019-12-02
+2019-12-02 19:10:37,394 INFO  com.bankguru.payment.Level_13_Payment_Coding -  -------------------------- PASSED -------------------------- 
+2019-12-02 19:10:37,471 INFO  com.bankguru.payment.Level_13_Payment_Coding - Actual = 50000
+2019-12-02 19:10:37,471 INFO  com.bankguru.payment.Level_13_Payment_Coding - Expected = 50000
+2019-12-02 19:10:37,471 INFO  com.bankguru.payment.Level_13_Payment_Coding -  -------------------------- PASSED -------------------------- 
+2019-12-02 19:10:37,551 INFO  com.bankguru.payment.Level_13_Payment_Coding - TC_03_AddNewAccount - Create second account
+2019-12-02 19:10:37,551 INFO  com.bankguru.payment.Level_13_Payment_Coding - TC_03_AddNewAccount - Step 06 : Open Add New Account page
+2019-12-02 19:10:38,586 INFO  com.bankguru.payment.Level_13_Payment_Coding - TC_03_AddNewAccount - Step 07 : Enter new account data to fields
+2019-12-02 19:10:38,950 INFO  com.bankguru.payment.Level_13_Payment_Coding - TC_03_AddNewAccount - Step 08 : Click to Submit button
+2019-12-02 19:10:40,542 INFO  com.bankguru.payment.Level_13_Payment_Coding - TC_03_AddNewAccount - Step 09 : Verify success message is displayed
+2019-12-02 19:10:40,603 INFO  com.bankguru.payment.Level_13_Payment_Coding -  -------------------------- PASSED -------------------------- 
+2019-12-02 19:10:40,603 INFO  com.bankguru.payment.Level_13_Payment_Coding - TC_04_AddNewAccount - Step 10 : Verify Add New Account Success
+2019-12-02 19:10:40,659 INFO  com.bankguru.payment.Level_13_Payment_Coding - Actual = 81427
+2019-12-02 19:10:40,660 INFO  com.bankguru.payment.Level_13_Payment_Coding - Expected = 81427
+2019-12-02 19:10:40,660 INFO  com.bankguru.payment.Level_13_Payment_Coding -  -------------------------- PASSED -------------------------- 
+2019-12-02 19:10:40,712 INFO  com.bankguru.payment.Level_13_Payment_Coding - Actual = John Cena
+2019-12-02 19:10:40,712 INFO  com.bankguru.payment.Level_13_Payment_Coding - Expected = John Cena
+2019-12-02 19:10:40,713 INFO  com.bankguru.payment.Level_13_Payment_Coding -  -------------------------- PASSED -------------------------- 
+2019-12-02 19:10:40,771 INFO  com.bankguru.payment.Level_13_Payment_Coding - Actual = batiztuta2092@gmail.com
+2019-12-02 19:10:40,771 INFO  com.bankguru.payment.Level_13_Payment_Coding - Expected = batiztuta2092@gmail.com
+2019-12-02 19:10:40,771 INFO  com.bankguru.payment.Level_13_Payment_Coding -  -------------------------- PASSED -------------------------- 
+2019-12-02 19:10:40,851 INFO  com.bankguru.payment.Level_13_Payment_Coding - Actual = Savings
+2019-12-02 19:10:40,852 INFO  com.bankguru.payment.Level_13_Payment_Coding - Expected = Savings
+2019-12-02 19:10:40,852 INFO  com.bankguru.payment.Level_13_Payment_Coding -  -------------------------- PASSED -------------------------- 
+2019-12-02 19:10:40,904 INFO  com.bankguru.payment.Level_13_Payment_Coding - Actual = 2019-12-02
+2019-12-02 19:10:40,904 INFO  com.bankguru.payment.Level_13_Payment_Coding - Expected = 2019-12-02
+2019-12-02 19:10:40,904 INFO  com.bankguru.payment.Level_13_Payment_Coding -  -------------------------- PASSED -------------------------- 
+2019-12-02 19:10:40,962 INFO  com.bankguru.payment.Level_13_Payment_Coding - Actual = 50000
+2019-12-02 19:10:40,962 INFO  com.bankguru.payment.Level_13_Payment_Coding - Expected = 50000
+2019-12-02 19:10:40,962 INFO  com.bankguru.payment.Level_13_Payment_Coding -  -------------------------- PASSED -------------------------- 
+2019-12-02 19:10:41,024 INFO  com.bankguru.payment.Level_13_Payment_Coding - TC_04_EditAccount - Step 01 : Open Edit Account page
+2019-12-02 19:10:42,783 INFO  com.bankguru.payment.Level_13_Payment_Coding - TC_04_EditAccount - Step 02 : Enter Account No
+2019-12-02 19:10:44,390 INFO  com.bankguru.payment.Level_13_Payment_Coding - TC_04_EditAccount - Step 03 : Change Type of Account
+2019-12-02 19:10:44,510 INFO  com.bankguru.payment.Level_13_Payment_Coding - TC_04_EditAccount - Step 04 : Click to Submit button
+2019-12-02 19:10:46,968 INFO  com.bankguru.payment.Level_13_Payment_Coding - TC_04_EditAccount - Step 05 : Verify success message is displayed
+2019-12-02 19:10:47,028 INFO  com.bankguru.payment.Level_13_Payment_Coding -  -------------------------- PASSED -------------------------- 
+2019-12-02 19:10:47,028 INFO  com.bankguru.payment.Level_13_Payment_Coding - TC_04_EditAccount - Step 06 : Verify type of account
+2019-12-02 19:10:47,089 INFO  com.bankguru.payment.Level_13_Payment_Coding - Actual = 81427
+2019-12-02 19:10:47,089 INFO  com.bankguru.payment.Level_13_Payment_Coding - Expected = 81427
+2019-12-02 19:10:47,089 INFO  com.bankguru.payment.Level_13_Payment_Coding -  -------------------------- PASSED -------------------------- 
+2019-12-02 19:10:47,155 INFO  com.bankguru.payment.Level_13_Payment_Coding - Actual = John Cena
+2019-12-02 19:10:47,155 INFO  com.bankguru.payment.Level_13_Payment_Coding - Expected = John Cena
+2019-12-02 19:10:47,155 INFO  com.bankguru.payment.Level_13_Payment_Coding -  -------------------------- PASSED -------------------------- 
+2019-12-02 19:10:47,208 INFO  com.bankguru.payment.Level_13_Payment_Coding - Actual = batiztuta2092@gmail.com
+2019-12-02 19:10:47,208 INFO  com.bankguru.payment.Level_13_Payment_Coding - Expected = batiztuta2092@gmail.com
+2019-12-02 19:10:47,208 INFO  com.bankguru.payment.Level_13_Payment_Coding -  -------------------------- PASSED -------------------------- 
+2019-12-02 19:10:47,273 INFO  com.bankguru.payment.Level_13_Payment_Coding - Actual = Current
+2019-12-02 19:10:47,273 INFO  com.bankguru.payment.Level_13_Payment_Coding - Expected = Current
+2019-12-02 19:10:47,273 INFO  com.bankguru.payment.Level_13_Payment_Coding -  -------------------------- PASSED -------------------------- 
+2019-12-02 19:10:47,336 INFO  com.bankguru.payment.Level_13_Payment_Coding - Actual = 2019-12-02
+2019-12-02 19:10:47,336 INFO  com.bankguru.payment.Level_13_Payment_Coding - Expected = 2019-12-02
+2019-12-02 19:10:47,336 INFO  com.bankguru.payment.Level_13_Payment_Coding -  -------------------------- PASSED -------------------------- 
+2019-12-02 19:10:47,401 INFO  com.bankguru.payment.Level_13_Payment_Coding - Actual = 50000
+2019-12-02 19:10:47,401 INFO  com.bankguru.payment.Level_13_Payment_Coding - Expected = 50000
+2019-12-02 19:10:47,402 INFO  com.bankguru.payment.Level_13_Payment_Coding -  -------------------------- PASSED -------------------------- 
+2019-12-02 19:10:47,405 INFO  com.bankguru.payment.Level_13_Payment_Coding - TC_05_Deposit - Step 01 : Open Deposit page
+2019-12-02 19:10:48,838 INFO  com.bankguru.payment.Level_13_Payment_Coding - TC_05_Deposit - Step 02 : Fill Amount Deposit form
+2019-12-02 19:10:49,281 INFO  com.bankguru.payment.Level_13_Payment_Coding - TC_05_Deposit - Step 03 : Click to Submit button
+2019-12-02 19:10:51,400 INFO  com.bankguru.payment.Level_13_Payment_Coding - TC_06_Deposit - Step 04 : Verify success message is displayed
+2019-12-02 19:10:51,456 INFO  com.bankguru.payment.Level_13_Payment_Coding -  -------------------------- PASSED -------------------------- 
+2019-12-02 19:10:51,456 INFO  com.bankguru.payment.Level_13_Payment_Coding - TC_06_Deposit - Step 05 : Verify Transaction details of Deposit
+2019-12-02 19:10:51,512 INFO  com.bankguru.payment.Level_13_Payment_Coding - Actual = 73457
+2019-12-02 19:10:51,512 INFO  com.bankguru.payment.Level_13_Payment_Coding - Expected = 73457
+2019-12-02 19:10:51,512 INFO  com.bankguru.payment.Level_13_Payment_Coding -  -------------------------- PASSED -------------------------- 
+2019-12-02 19:10:51,571 INFO  com.bankguru.payment.Level_13_Payment_Coding - Actual = 5000
+2019-12-02 19:10:51,571 INFO  com.bankguru.payment.Level_13_Payment_Coding - Expected = 5000
+2019-12-02 19:10:51,572 INFO  com.bankguru.payment.Level_13_Payment_Coding -  -------------------------- PASSED -------------------------- 
+2019-12-02 19:10:51,633 INFO  com.bankguru.payment.Level_13_Payment_Coding - Actual = Deposit
+2019-12-02 19:10:51,633 INFO  com.bankguru.payment.Level_13_Payment_Coding - Expected = Deposit
+2019-12-02 19:10:51,633 INFO  com.bankguru.payment.Level_13_Payment_Coding -  -------------------------- PASSED -------------------------- 
+2019-12-02 19:10:51,706 INFO  com.bankguru.payment.Level_13_Payment_Coding - Actual = Fund Trans
+2019-12-02 19:10:51,707 INFO  com.bankguru.payment.Level_13_Payment_Coding - Expected = Fund Trans
+2019-12-02 19:10:51,707 INFO  com.bankguru.payment.Level_13_Payment_Coding -  -------------------------- PASSED -------------------------- 
+2019-12-02 19:10:51,776 INFO  com.bankguru.payment.Level_13_Payment_Coding - Actual = 55000
+2019-12-02 19:10:51,776 INFO  com.bankguru.payment.Level_13_Payment_Coding - Expected = 55000
+2019-12-02 19:10:51,776 INFO  com.bankguru.payment.Level_13_Payment_Coding -  -------------------------- PASSED -------------------------- 
+2019-12-02 19:10:51,778 INFO  com.bankguru.payment.Level_13_Payment_Coding - TC_06_Withdrawal - Step 01 : Open Withdrawal page
+2019-12-02 19:10:53,165 INFO  com.bankguru.payment.Level_13_Payment_Coding - TC_06_Withdrawal - Step 02 : Fill Amount Withdrawal form
+2019-12-02 19:10:53,589 INFO  com.bankguru.payment.Level_13_Payment_Coding - TC_06_Withdrawal - Step 03 : Click to Submit button
+2019-12-02 19:10:55,892 INFO  com.bankguru.payment.Level_13_Payment_Coding - TC_06_Withdrawal - Step 04 : Verify success message is displayed
+2019-12-02 19:10:55,947 INFO  com.bankguru.payment.Level_13_Payment_Coding -  -------------------------- PASSED -------------------------- 
+2019-12-02 19:10:55,947 INFO  com.bankguru.payment.Level_13_Payment_Coding - TC_06_Withdrawal - Step 05 : Verify Transaction details of Withdrawal
+2019-12-02 19:10:56,003 INFO  com.bankguru.payment.Level_13_Payment_Coding - Actual = 73457
+2019-12-02 19:10:56,003 INFO  com.bankguru.payment.Level_13_Payment_Coding - Expected = 73457
+2019-12-02 19:10:56,003 INFO  com.bankguru.payment.Level_13_Payment_Coding -  -------------------------- PASSED -------------------------- 
+2019-12-02 19:10:56,062 INFO  com.bankguru.payment.Level_13_Payment_Coding - Actual = 5000
+2019-12-02 19:10:56,062 INFO  com.bankguru.payment.Level_13_Payment_Coding - Expected = 5000
+2019-12-02 19:10:56,062 INFO  com.bankguru.payment.Level_13_Payment_Coding -  -------------------------- PASSED -------------------------- 
+2019-12-02 19:10:56,122 INFO  com.bankguru.payment.Level_13_Payment_Coding - Actual = Withdrawal
+2019-12-02 19:10:56,122 INFO  com.bankguru.payment.Level_13_Payment_Coding - Expected = Withdrawal
+2019-12-02 19:10:56,122 INFO  com.bankguru.payment.Level_13_Payment_Coding -  -------------------------- PASSED -------------------------- 
+2019-12-02 19:10:56,181 INFO  com.bankguru.payment.Level_13_Payment_Coding - Actual = Withdrawal
+2019-12-02 19:10:56,182 INFO  com.bankguru.payment.Level_13_Payment_Coding - Expected = Withdrawal
+2019-12-02 19:10:56,182 INFO  com.bankguru.payment.Level_13_Payment_Coding -  -------------------------- PASSED -------------------------- 
+2019-12-02 19:10:56,246 INFO  com.bankguru.payment.Level_13_Payment_Coding - Actual = 50000
+2019-12-02 19:10:56,246 INFO  com.bankguru.payment.Level_13_Payment_Coding - Expected = 50000
+2019-12-02 19:10:56,246 INFO  com.bankguru.payment.Level_13_Payment_Coding -  -------------------------- PASSED -------------------------- 
+2019-12-02 19:10:56,249 INFO  com.bankguru.payment.Level_13_Payment_Coding - TC_07_TransferToAnotherAccount - Step 01 : Open Fund Transfer page
+2019-12-02 19:10:58,662 INFO  com.bankguru.payment.Level_13_Payment_Coding - TC_07_TransferToAnotherAccount - Step 02 : Enter data fund transfer
+2019-12-02 19:10:59,328 INFO  com.bankguru.payment.Level_13_Payment_Coding - TC_07_TransferToAnotherAccount - Step 03 : Click to Submit button
+2019-12-02 19:11:01,546 INFO  com.bankguru.payment.Level_13_Payment_Coding - TC_07_TransferToAnotherAccount - Step 04 : Verify success message is displayed
+2019-12-02 19:11:01,602 INFO  com.bankguru.payment.Level_13_Payment_Coding -  -------------------------- PASSED -------------------------- 
+2019-12-02 19:11:01,602 INFO  com.bankguru.payment.Level_13_Payment_Coding - TC_07_TransferToAnotherAccount - Step 05 : Verify Fund Transfer Details
+2019-12-02 19:11:01,667 INFO  com.bankguru.payment.Level_13_Payment_Coding - Actual = 73457
+2019-12-02 19:11:01,667 INFO  com.bankguru.payment.Level_13_Payment_Coding - Expected = 73457
+2019-12-02 19:11:01,667 INFO  com.bankguru.payment.Level_13_Payment_Coding -  -------------------------- PASSED -------------------------- 
+2019-12-02 19:11:01,736 INFO  com.bankguru.payment.Level_13_Payment_Coding - Actual = 73458
+2019-12-02 19:11:01,736 INFO  com.bankguru.payment.Level_13_Payment_Coding - Expected = 73458
+2019-12-02 19:11:01,736 INFO  com.bankguru.payment.Level_13_Payment_Coding -  -------------------------- PASSED -------------------------- 
+2019-12-02 19:11:01,796 INFO  com.bankguru.payment.Level_13_Payment_Coding - Actual = 5000
+2019-12-02 19:11:01,797 INFO  com.bankguru.payment.Level_13_Payment_Coding - Expected = 5000
+2019-12-02 19:11:01,797 INFO  com.bankguru.payment.Level_13_Payment_Coding -  -------------------------- PASSED -------------------------- 
+2019-12-02 19:11:01,853 INFO  com.bankguru.payment.Level_13_Payment_Coding - Actual = Fund Trans
+2019-12-02 19:11:01,853 INFO  com.bankguru.payment.Level_13_Payment_Coding - Expected = Fund Trans
+2019-12-02 19:11:01,853 INFO  com.bankguru.payment.Level_13_Payment_Coding -  -------------------------- PASSED -------------------------- 
+2019-12-02 19:11:01,854 INFO  com.bankguru.payment.Level_13_Payment_Coding - TC_08_CheckCurrentAccountBalance - Step 01 : Open Balance Enquiry page
+2019-12-02 19:11:03,794 INFO  com.bankguru.payment.Level_13_Payment_Coding - TC_08_CheckCurrentAccountBalance - Step 02 : Enter Account No
+2019-12-02 19:11:03,955 INFO  com.bankguru.payment.Level_13_Payment_Coding - TC_08_CheckCurrentAccountBalance - Step 03 : Click Submit button
+2019-12-02 19:11:05,730 INFO  com.bankguru.payment.Level_13_Payment_Coding - TC_08_CheckCurrentAccountBalance - Step 04 : Verify success message is displayed
+2019-12-02 19:11:05,788 INFO  com.bankguru.payment.Level_13_Payment_Coding -  -------------------------- PASSED -------------------------- 
+2019-12-02 19:11:05,788 INFO  com.bankguru.payment.Level_13_Payment_Coding - TC_08_CheckCurrentAccountBalance - Step 05 : Verify Balance Details for Account
+2019-12-02 19:11:05,845 INFO  com.bankguru.payment.Level_13_Payment_Coding - Actual = 73457
+2019-12-02 19:11:05,845 INFO  com.bankguru.payment.Level_13_Payment_Coding - Expected = 73457
+2019-12-02 19:11:05,845 INFO  com.bankguru.payment.Level_13_Payment_Coding -  -------------------------- PASSED -------------------------- 
+2019-12-02 19:11:05,908 INFO  com.bankguru.payment.Level_13_Payment_Coding - Actual = Current
+2019-12-02 19:11:05,909 INFO  com.bankguru.payment.Level_13_Payment_Coding - Expected = Current
+2019-12-02 19:11:05,909 INFO  com.bankguru.payment.Level_13_Payment_Coding -  -------------------------- PASSED -------------------------- 
+2019-12-02 19:11:05,976 INFO  com.bankguru.payment.Level_13_Payment_Coding - Actual = 45000
+2019-12-02 19:11:05,976 INFO  com.bankguru.payment.Level_13_Payment_Coding - Expected = 45000
+2019-12-02 19:11:05,976 INFO  com.bankguru.payment.Level_13_Payment_Coding -  -------------------------- PASSED -------------------------- 
+2019-12-02 19:11:05,978 INFO  com.bankguru.payment.Level_13_Payment_Coding - Delete first account
+2019-12-02 19:11:05,978 INFO  com.bankguru.payment.Level_13_Payment_Coding - TC_09_DeleteCurrentBankAccount - Step 01 : Open Delete Account page
+2019-12-02 19:11:07,632 INFO  com.bankguru.payment.Level_13_Payment_Coding - TC_09_DeleteCurrentBankAccount - Step 02 : Enter Account No
+2019-12-02 19:11:07,770 INFO  com.bankguru.payment.Level_13_Payment_Coding - TC_09_DeleteCurrentBankAccount - Step 03 : Click Submit button
+2019-12-02 19:11:07,878 INFO  com.bankguru.payment.Level_13_Payment_Coding - TC_09_DeleteCurrentBankAccount - Step 04 : Verify and accept confirm alert message
+2019-12-02 19:11:07,945 INFO  com.bankguru.payment.Level_13_Payment_Coding -  -------------------------- PASSED -------------------------- 
+2019-12-02 19:11:07,945 INFO  com.bankguru.payment.Level_13_Payment_Coding - TC_09_DeleteCurrentBankAccount - Step 05 : Verify account delete successfull
+2019-12-02 19:11:08,266 INFO  com.bankguru.payment.Level_13_Payment_Coding -  -------------------------- PASSED -------------------------- 
+2019-12-02 19:11:08,266 INFO  com.bankguru.payment.Level_13_Payment_Coding - TC_09_DeleteCurrentBankAccount - Step 06 : Open Delete Account page
+2019-12-02 19:11:09,045 INFO  com.bankguru.payment.Level_13_Payment_Coding - TC_10_DeleteCurrentCustomerAccount - Step 01 : Open Delete Customer page
+2019-12-02 19:11:10,585 INFO  com.bankguru.payment.Level_13_Payment_Coding - TC_10_DeleteCurrentCustomerAccount - Step 02 : Enter Customer ID
+2019-12-02 19:11:10,732 INFO  com.bankguru.payment.Level_13_Payment_Coding - TC_10_DeleteCurrentCustomerAccount - Step 03 : Click Submit button
+2019-12-02 19:11:10,843 INFO  com.bankguru.payment.Level_13_Payment_Coding - TC_10_DeleteCurrentCustomerAccount - Step 04 : Verify and accept confirm alert message
+2019-12-02 19:11:10,894 INFO  com.bankguru.payment.Level_13_Payment_Coding -  -------------------------- PASSED -------------------------- 
+2019-12-02 19:11:10,894 INFO  com.bankguru.payment.Level_13_Payment_Coding - TC_10_DeleteCurrentBankAccount - Step 05 : Verify customer delete successfull
+2019-12-02 19:11:11,208 INFO  com.bankguru.payment.Level_13_Payment_Coding -  -------------------------- FAILED -------------------------- 
+2019-12-02 19:11:11,209 INFO  com.bankguru.payment.Level_13_Payment_Coding - TC_10_DeleteCurrentCustomerAccount - Step 06 : Open Delete Customer page
+2019-12-02 19:11:13,039 INFO  com.bankguru.payment.Level_13_Payment_Coding - TC_10_DeleteCurrentCustomerAccount - Step 07 : Enter Customer ID
+2019-12-02 19:11:13,188 INFO  com.bankguru.payment.Level_13_Payment_Coding - TC_10_DeleteCurrentCustomerAccount - Step 08 : Click Submit button
+2019-12-02 19:11:13,278 INFO  com.bankguru.payment.Level_13_Payment_Coding - TC_10_DeleteCurrentCustomerAccount - Step 09 : Verify and accept confirm alert message
+2019-12-02 19:11:13,304 INFO  com.bankguru.payment.Level_13_Payment_Coding -  -------------------------- PASSED -------------------------- 
+2019-12-02 19:11:13,304 INFO  com.bankguru.payment.Level_13_Payment_Coding - TC_10_DeleteCurrentBankAccount - Step 10 : Verify account does not exitst alert message
+2019-12-02 19:11:13,638 INFO  com.bankguru.payment.Level_13_Payment_Coding -  -------------------------- FAILED -------------------------- 
