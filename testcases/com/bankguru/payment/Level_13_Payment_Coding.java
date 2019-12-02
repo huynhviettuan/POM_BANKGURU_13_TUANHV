@@ -1,7 +1,5 @@
 package com.bankguru.payment;
 
-import java.util.concurrent.TimeUnit;
-
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.BeforeClass;
@@ -26,40 +24,6 @@ import driverFactory.DriverManager;
 import driverFactory.DriverManagerFactory;
 
 public class Level_13_Payment_Coding extends AbstractTest {
-	WebDriver driver;
-	WebDriverWait explicitWait;
-
-	private String userIDValue;
-	private String passwordValue;
-	private String customerName;
-	private String dateOfBirth;
-	private String address;
-	private String city;
-	private String state;
-	private String pin;
-	private String phone;
-	private String email;
-	private String password;
-	private String editAddress;
-	private String editCity;
-	private String editState;
-	private String editPin;
-	private String editPhone;
-	private String editEmail;
-	private String customerID, accountNo1, accountNo2;
-	private DriverManager driverManager;
-	private LoginPageObject loginPage;
-	private NewCustomerPageObject newcustomerPage;
-	private HomePageObject homePage;
-	private EditCustomerPageObject editCustomerPage;
-	private NewAccountPageObject newAccountPage;
-	private EditAccountPageObject editAccountPage;
-	private DepositPageObject depositPage;
-	private WithdrawalPageObject withdrawalPage;
-	private FundTransferPageObject fundTransferPage;
-	private BalanceEnquiryPageObject balanceEnquiryPage;
-	private DeleteAccountPageObject deleteAccountPage;
-	private DeleteCustomerPageObject deleteCustomerPage;
 
 	@Parameters("browser")
 	@BeforeClass
@@ -86,9 +50,6 @@ public class Level_13_Payment_Coding extends AbstractTest {
 		editPhone = "0782241663";
 		editEmail = "batiztuta2092@gmail.com";
 
-		explicitWait = new WebDriverWait(driver, 20);
-		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-		driver.get("http://demo.guru99.com/v4/");
 		loginPage = PageGeneratorManager.getLoginPage(driver);
 
 		loginPage.inputToDynamicTextbox(driver, "uid", userIDValue);
@@ -436,5 +397,40 @@ public class Level_13_Payment_Coding extends AbstractTest {
 	public void cleanData() {
 		closeBrowserAndDriver(driver);
 	}
+
+	WebDriver driver;
+	WebDriverWait explicitWait;
+
+	private String userIDValue;
+	private String passwordValue;
+	private String customerName;
+	private String dateOfBirth;
+	private String address;
+	private String city;
+	private String state;
+	private String pin;
+	private String phone;
+	private String email;
+	private String password;
+	private String editAddress;
+	private String editCity;
+	private String editState;
+	private String editPin;
+	private String editPhone;
+	private String editEmail;
+	private String customerID, accountNo1, accountNo2;
+	private DriverManager driverManager;
+	private LoginPageObject loginPage;
+	private NewCustomerPageObject newcustomerPage;
+	private HomePageObject homePage;
+	private EditCustomerPageObject editCustomerPage;
+	private NewAccountPageObject newAccountPage;
+	private EditAccountPageObject editAccountPage;
+	private DepositPageObject depositPage;
+	private WithdrawalPageObject withdrawalPage;
+	private FundTransferPageObject fundTransferPage;
+	private BalanceEnquiryPageObject balanceEnquiryPage;
+	private DeleteAccountPageObject deleteAccountPage;
+	private DeleteCustomerPageObject deleteCustomerPage;
 
 }
