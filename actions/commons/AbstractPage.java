@@ -22,27 +22,28 @@ import bankguru.pageUIs.AbstractPageUI;
 public class AbstractPage extends AbstractPageUI {
 	
 	public By getByLocator() {
-        String body = this.locator.replaceAll("[\\w\\s]*=(.*)", "$1").trim();
-        String type = this.locator.replaceAll("([\\w\\s]*)=.*", "$1").trim();
-        switch (type.toLowerCase()) {
-            case "css":
-                return By.cssSelector(body);
-            case "id":
-                return By.id(body);
-            case "class":
-                return By.className(body);
-            case "link":
-                return By.linkText(body);
-            case "xpath":
-                return By.xpath(body);
-            case "text":
-                return By.xpath(String.format("//*[contains(text(), '%s')]", body));
-            case "name":
-                return By.name(body);
-            default:
-                return By.xpath(locator);
+		String body = this.locator.replaceAll("[\\w\\s]*=(.*)", "$1").trim();
+		String type = this.locator.replaceAll("([\\w\\s]*)=.*", "$1").trim();
+		switch (type.toLowerCase()) {
+		    case "css":
+			return By.cssSelector(body);
+		    case "id":
+			return By.id(body);
+		    case "class":
+			return By.className(body);
+		    case "link":
+			return By.linkText(body);
+		    case "xpath":
+			return By.xpath(body);
+		    case "text":
+			return By.xpath(String.format("//*[contains(text(), '%s')]", body));
+		    case "name":
+			return By.name(body);
+		    default:
+			return By.xpath(locator);
         }
-
+	
+	
 	public void openAnyURL(WebDriver driver, String urlValue) {
 		driver.get(urlValue);
 	}
