@@ -42,6 +42,13 @@ public class AbstractPage extends AbstractPageUI {
 		    default:
 			return By.xpath(locator);
         }
+		
+	public void clickToElement(WebDriver driver, String locator, String... values) {
+		locator = String.format(locator, (Object[]) values);
+		by = getByLocator();
+		element = driver.findElement(by);
+		element.click();
+	}
 	
 	
 	public void openAnyURL(WebDriver driver, String urlValue) {
@@ -488,7 +495,7 @@ public class AbstractPage extends AbstractPageUI {
 		sleepInSecond(10);
 		return actualAlertMessage.equals(expectedAlertMessage);
 	}
-
+	
 	By by;
 	Select select;
 	Actions action;
