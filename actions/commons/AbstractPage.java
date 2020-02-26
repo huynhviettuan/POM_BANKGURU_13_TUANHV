@@ -21,7 +21,7 @@ import bankguru.pageUIs.AbstractPageUI;
 
 public class AbstractPage extends AbstractPageUI {
 	
-	public By getByLocator() {
+	public By getByLocator(String locator) {
 		String body = this.locator.replaceAll("[\\w\\s]*=(.*)", "$1").trim();
 		String type = this.locator.replaceAll("([\\w\\s]*)=.*", "$1").trim();
 		switch (type.toLowerCase()) {
@@ -42,14 +42,13 @@ public class AbstractPage extends AbstractPageUI {
 		    default:
 			return By.xpath(locator);
         }
-		
-	public void clickToElement(WebDriver driver, String locator, String... values) {
-		locator = String.format(locator, (Object[]) values);
-		by = getByLocator();
+	
+	public void clickToElementTest(WebDriver driver, String locator) {
+		by = getByLocator(locator);
 		element = driver.findElement(by);
 		element.click();
 	}
-	
+		
 	
 	public void openAnyURL(WebDriver driver, String urlValue) {
 		driver.get(urlValue);
